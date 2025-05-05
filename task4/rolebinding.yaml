@@ -1,0 +1,41 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: viewer-access
+  namespace: prop-development
+subjects:
+  - kind: ServiceAccount
+    name: secure-operator
+    apiGroup: ""
+roleRef:
+  kind: Role
+  name: viewer
+  apiGroup: ""
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: secret-manager-access
+  namespace: prop-development
+subjects:
+  - kind: ServiceAccount
+    name: secure-operator
+    apiGroup: ""
+roleRef:
+  kind: Role
+  name: secret-manager
+  apiGroup: ""
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: manager-access
+  namespace: prop-development
+subjects:
+  - kind: ServiceAccount
+    name: developer
+    apiGroup: ""
+roleRef:
+  kind: Role
+  name: manager
+  apiGroup: ""
