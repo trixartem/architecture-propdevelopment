@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: developer
+  namespace: prop-development
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: secure-operator
+  namespace: prop-development
