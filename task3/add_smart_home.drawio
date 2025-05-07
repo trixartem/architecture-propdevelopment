@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.16 Chrome/132.0.6834.196 Electron/34.2.0 Safari/537.36" version="26.0.16">
   <diagram name="Страница — 1" id="AA9cZ-glA_Fp__WyKTjR">
-    <mxGraphModel dx="2926" dy="899" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2417" dy="539" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -650,8 +650,8 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ibkApA4Zqnp6w7QXOR37-13" value="&lt;b&gt;Как происходит взаимодействие:&lt;/b&gt;&lt;br&gt;- При регистрации пользователя, добавляется запись на сервис партнера: ID, номер машин/телефона&lt;br&gt;- Партнеры обращаются в сервис собственника для валидации номера телефона, биометрии, номера автомобиля&lt;div&gt;- После этого управляют умными устройствами&lt;/div&gt;&lt;div&gt;- Так же собственник может из приложения управлять устройствами. Тогда отправляется запрос на открытие двери/шлагбаума&lt;br&gt;&lt;br&gt;&lt;b&gt;Требования к безопасности:&lt;/b&gt;&lt;div&gt;- Авторизация происходит через OAuth 2.0&lt;/div&gt;&lt;div&gt;- Сервисы партнеров не хранят перс данные, а оперируют ID пользователя. Например UUID&lt;/div&gt;&lt;div&gt;- Телефоны и номера машин должны храниться в зашифрованом виде и в логах должны обфусцироваться&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="2400" y="790" width="370" height="241" as="geometry" />
+        <mxCell id="ibkApA4Zqnp6w7QXOR37-13" value="&lt;b&gt;Как происходит взаимодействие:&lt;/b&gt;&lt;br&gt;- При регистрации пользователя, добавляется запись на сервис партнера: ID, номер машин/телефона&lt;br&gt;- Партнеры обращаются в сервис собственника для валидации номера телефона, биометрии, номера автомобиля&lt;div&gt;- После этого управляют умными устройствами&lt;/div&gt;&lt;div&gt;- Так же собственник может из приложения управлять устройствами. Тогда отправляется запрос на открытие двери/шлагбаума&lt;br&gt;&lt;br&gt;&lt;b&gt;Требования к безопасности партнера:&lt;/b&gt;&lt;div&gt;- Авторизация происходит через OAuth 2.0&lt;/div&gt;&lt;div&gt;- Сервисы партнеров не хранят перс данные, а оперируют ID пользователя. Например UUID&lt;/div&gt;&lt;div&gt;- Телефоны и номера машин должны храниться в зашифрованом виде и в логах должны обфусцироваться&lt;/div&gt;&lt;/div&gt;&lt;div&gt;- MFA&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Требования к безопасности нашей системы:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;- Соответствие 152 ФЗ. Так как у нас хранится биометрия и перс данные&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;- MFA&lt;/div&gt;&lt;div&gt;- Проверка на сложность пароля&lt;/div&gt;&lt;div&gt;- Принцип минимальных привилегий&lt;/div&gt;&lt;div&gt;- Обезличивание данных&lt;/div&gt;&lt;div&gt;- Шифрование при передаче и хранении некоторых данных&lt;/div&gt;&lt;div&gt;- Журнал контроля доступа&lt;/div&gt;&lt;div&gt;- Регулярные аудиты&lt;/div&gt;&lt;div&gt;- Исключить избыточную передачу информации в сервисы интеграций&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2400" y="760" width="370" height="450" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
